@@ -1,0 +1,8 @@
+#Profile que ira formatar a saida pretty
+default: --no-source --color --format pretty
+
+#profile que irá executar funcionalidade/cenarios que tenham as tags 
+#@ct01 e @ct02 e @ct03
+diario: -t @ct01 -t @ct02 -t @ct03
+
+regressao: -t @ct4,@ct05,@ct06,@ct07,@ct08 -f html -o html_report.html
